@@ -12,9 +12,16 @@ function ToDoItem(props) {
   }
 
   return (
-    <li style={{ textDecoration: completed }} onMouseDown={handleTask}>
-      {props.text}
-    </li>
+    <div>
+      <li
+        style={{ textDecoration: completed }}
+        onMouseDown={() => {
+          props.delete(props.id);
+        }}
+      >
+        {props.text}
+      </li>
+    </div>
   );
 }
 

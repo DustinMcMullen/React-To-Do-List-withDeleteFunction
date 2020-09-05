@@ -26,6 +26,7 @@ body {
   padding: 1rem;
   box-sizing: border-box;
 }
+
 .heading {
   display: flex;
   align-items: center;
